@@ -1,0 +1,88 @@
+﻿
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div id="content_header">
+        <div class="col-lg-8">
+            <h2>Notas del Alumno</h2>
+            <ol class="breadcrumb">
+                <li>
+                   Consulta
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-4" style="text-align:right;padding:20px">
+            <button type="button" class="btn btn-success" id="btnObtener">
+                <span class="fa fa-search"></span>&nbsp;Buscar
+            </button>
+            @*<button type="button" class="btn btn-primary" id="btnSave">
+                <span class="fa fa-save"></span>&nbsp;Save
+            </button>*@
+        </div>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content gray-bg animated fadeInRight">
+    <div class="ibox" id="formList">
+        <div class="ibox">
+            <div class="ibox-content">
+                <div class="row">
+
+
+                    <div class="form-horizontal">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">
+                                    Codigo Alumno 
+                                </label>
+                                <div class="col-sm-10">
+                                    <input id="txtCodigo" type="text" class="form-control" onkeypress='return DigitimosDecimales(event,this);' />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">
+                                    DNI
+                                </label>
+                                <div class="col-sm-10">
+                                    <input id="txtDni" type="text" class="form-control" onkeypress='return DigitimosDecimales(event,this);' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ibox float-e-margins">
+            <div id="divContent" class="ibox-content">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal inmodal in" id="mdInsertBulk" tabindex="-1" role="dialog" aria-hidden="true" style="display: none; padding-right: 17px;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h5 class="modal-title">Load Eventos</h5>
+            </div>
+            <div class="modal-body">
+                <div class="form-inline">
+                    <div class="form-group" style="padding-right:20px;">
+                        <label style="padding-right:5px;">Archivo Excel (XLSX):</label>
+                        <input type="file" id="txtFile" class="form-control" />
+                    </div>
+                    <div class="form-group" style="padding-right:20px;">
+                        <button type="button" class="btn btn-success" id="btnInsertBulk">Save</button>
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

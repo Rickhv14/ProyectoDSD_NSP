@@ -1,0 +1,86 @@
+﻿
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div id="content_header">
+        <div class="col-lg-8">
+            <h2>Matricula</h2>
+            <ol class="breadcrumb">
+                <li>
+                    Ratificacion
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-4" style="text-align:right;padding:20px">
+            <button type="button" class="btn btn-primary" id="btnGrabar">
+                <span class="fa fa-plus"></span>&nbsp;Grabar
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper wrapper-content gray-bg animated fadeInRight">
+    <div class="ibox" id="formList">
+        <div class="ibox">
+            <div class="ibox-content">
+                <div class="row">
+
+
+                    <div class="form-horizontal">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">
+                                    DNI Alumno
+                                </label>
+                                <div class="col-sm-9">
+                                    <div class="input-group m-b">
+                                        <input class="form-control" id="txtDNI" />
+                                        <span id="spnBuscar" class="input-group-addon" style="cursor:pointer"><i class="fa fa-search"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Codigo Alumno</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" value="" id="txtCodigoAlumno" readonly />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Nombre Alumno</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" value="" id="txtNombre" readonly />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Turno</label>
+                                <div class="col-sm-10">
+                                    <select id="cboTurno" class="form-control">
+                                        <option value="Mañama">Mañana</option>
+                                        <option value="Tarde">Tarde</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Comentario</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" id="txtComentario"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ibox float-e-margins">
+            <div id="divContent" class="ibox-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="txtTelefono" value=""/>
